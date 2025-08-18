@@ -7,6 +7,7 @@ import { useState } from "react";
 
 function App() {
   const [progress, setProgress] = useState(0);
+  let apiKey = process.env.REACT_APP_NEWS_API;
 
   return (
     <div>
@@ -21,6 +22,7 @@ function App() {
                 setProgress={setProgress}
                 key="general"
                 pageSize={6}
+                apiKey={apiKey}
                 category="general"
               />
             }
@@ -32,6 +34,7 @@ function App() {
                 setProgress={setProgress}
                 key="business"
                 pageSize={6}
+                apiKey={apiKey}
                 category="business"
               />
             }
@@ -43,6 +46,7 @@ function App() {
                 setProgress={setProgress}
                 key="entertainment"
                 pageSize={6}
+                apiKey={apiKey}
                 category="entertainment"
               />
             }
@@ -55,6 +59,7 @@ function App() {
                 setProgress={setProgress}
                 key="health"
                 pageSize={6}
+                apiKey={apiKey}
                 category="health"
               />
             }
@@ -66,6 +71,7 @@ function App() {
                 setProgress={setProgress}
                 key="general"
                 pageSize={6}
+                apiKey={apiKey}
                 category="general"
               />
             }
@@ -78,6 +84,7 @@ function App() {
                 setProgress={setProgress}
                 key="science"
                 pageSize={6}
+                apiKey={apiKey}
                 category="science"
               />
             }
@@ -90,6 +97,7 @@ function App() {
                 setProgress={setProgress}
                 key="sports"
                 pageSize={6}
+                apiKey={apiKey}
                 category="sports"
               />
             }
@@ -102,6 +110,7 @@ function App() {
                 setProgress={setProgress}
                 key="technology"
                 pageSize={6}
+                apiKey={apiKey}
                 category="technology"
               />
             }
