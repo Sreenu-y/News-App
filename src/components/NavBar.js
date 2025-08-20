@@ -6,7 +6,7 @@ export default class NavBar extends Component {
     return (
       <div>
         <div>
-          <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+          <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
             <div className="container-fluid">
               <NavLink className="navbar-brand" to="/">
                 NewsMonkey
